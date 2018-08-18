@@ -1,0 +1,1 @@
+Verifico con el comado status y con los logs
