@@ -1,0 +1,8 @@
+Una de las mayores ventajas de trabajar con git como control de versiones es poder crear ramas y experimentar 
+con ellas sin tener la preocupación de dañar nuestro código o cuando estamos trabajando y de repente surge un 
+imprevisto podemos crear una rama y arreglar el problema, 
+eso sin tocar lo que estábamos haciendo. Pero ¿Cómo unimos lo que hicimos en otras ramas a la rama principal?
+
+Hacer git merge en un repositorio es integrar o fusionar las líneas de código de commits de una rama con otra. 
+Éste es uno de los comandos básicos que usamos en nuestro día a día con git. 
+Vamos a profundizar un poco en las opciones que tenemos disponibles con él.
