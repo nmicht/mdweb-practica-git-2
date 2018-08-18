@@ -1,0 +1,32 @@
+Como resolver conflictos en Git y otros errores al subir un cambio
+
+Aunque Git hace un muy buen trabajo al unir los cambios que hacemos a la versión que se encuentra en el servidor, en ocasiones este proceso puede dar algunos errores o conflictos que necesitan corregirse manualmente.
+
+
+error: failed to push some refs to
+Cuando estamos trabajando en una rama y queremos subir los cambios al servidor usando el comando git push, podemos recibir un error en caso de que estemos enviando cambios a un archivo al cual otra persona ya envió un cambio, en este caso vamos a obtener un error como este:
+
+error: failed to push some refs to …
+
+
+
+Afortunadamente este error es facil de corregir, solo debemos ejecutar el comando pull:
+
+git pull origin nombre_rama
+
+Donde nombre_rama es el nombre de la rama en la que estamos trabajando y sobre la cual vamos a subir los cambios.
+
+Luego volvemos a intentar subir los cambios.
+
+Merge conflict in …
+Otro error un poco más difícil de resolver, es cuando dos personas modifican exactamente la misma linea de código, en este caso Git no sabe como resolver el problema y genera un error llamado conflicto.
+
+
+
+El mensaje de error nos dice cuales son los archivos que presentan un conflicto, en la imagen anterior se ve que el archivo es el index.html y al abrirlo veremos algo como esto:
+
+
+
+Las lineas que presentan conflicto se encuentra entre lineas <<<<<<< HEAD  y >>>>>>> ….
+
+Los signos igual ( ======= ) separan los cambios hechos por ti y los cambios hechos por otra persona, en este momento debes contactar a la persona que hizo esos cambios y ponerse de acuerdo sobre como debería de quedar el archivo, modificarlo y volver a intentar subirlo, con todos los pasos ( git add ., git commit y git push)

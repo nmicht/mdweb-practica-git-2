@@ -1,0 +1,4 @@
+Para subir cambios de nuestras ramas debemos haber actualizado la misma 
+con el comando pull luego unir nuestros archivos con de la ultima 
+version y luego se vuelve hacer commit y finalmente se ejecuta el 
+comando push
